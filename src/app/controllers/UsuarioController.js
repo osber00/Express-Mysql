@@ -91,6 +91,7 @@ exports.postUsuario = async (req, res)=>{
 /* Actualizar información de Usuario */
 exports.updateUsuario = async(req, res)=>{
     const id = req.params.id
+    //ñr7console.log(req.body)
     const usuario = await Usuario.update(
         {
             name: req.body.name,

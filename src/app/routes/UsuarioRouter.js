@@ -1,7 +1,7 @@
 const router = require('express').Router()
 const {check} = require('express-validator')
 
-const usuarioController = require('../controllers/UsuarioController')
+const usuarioController = require('..app/controllers/UsuarioController')
 
 const validacionesCreate = [
     check('name','El campo nombre es requerido').not().isEmpty(),
